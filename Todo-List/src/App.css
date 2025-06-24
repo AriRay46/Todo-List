@@ -1,0 +1,119 @@
+/* TodoList.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #6e56b3, #cea3ff, #99f7ff);
+  margin: 0;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  color: #fff;
+}
+
+.todo-container {
+  background:linear-gradient(to right, #258ec2, #f6d3ff, #5cedfa);
+  padding: 30px 25px;
+  border-radius: 20px;
+  width: 420px;
+  color: #001f3f;
+  transition:  0.3s ease-in 0s;
+  border: 2px solid rgb(6, 6, 85);
+}
+.todo-container:hover{
+box-shadow: 0 14px 20px rgba(15, 1, 1, 0.2);
+border: none;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 2px solid #005b96;
+  outline: none;
+  margin-bottom: 20px;
+  background-color: #05131a;
+  color: #1a81e7;
+}
+
+input::placeholder {
+  color: #0a3c6e;
+  background-color: #e9f4ff;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 6px 4px 12px 0;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+.add-btn {
+  background: linear-gradient(to right, #320d99, #a74ddb, #8dd6cb);
+  color: #070909;
+}
+
+.delete-btn {
+  background-color: #c0392b;
+  color: #fff;
+}
+
+.done-btn {
+  background-color: rgb(47, 248, 90);
+  color: #1b0909;
+}
+
+.all-done-btn {
+  background: linear-gradient(to right, #3406b3, #e487ec, #1defd0);
+  color: #0d0707;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  background-color: #b2d4e6;
+  color: #001f3f;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+li span {
+  flex: 1;
+  font-weight: 500;
+}
+
+li span.done {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+h4 {
+  text-align: center;
+  margin-top: 0;
+  color: #001f3f;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
